@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+  --bg-color: #ff0000;
+  --bg-btn : rgb(255, 0, 179);
+  --bg-modal : #212121f5;
+  --box-shdow: rgba(0, 0, 0, 0.25);
+  --white:#fafafa;
+  --balck:#212121;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+display: flex;
+justify-content: center;
+}
+
+body{
+    background: linear-gradient(53deg, var(--bg-color) 0% 10%,var(--balck) 10% 20%,var(--bg-color) 20% 30%, var(--white) 30% 90% , var(--balck) 90% 95%, var(--bg-color) 95% 100%)
+}
+
+.main{
+    width: 90%;
+    position: absolute;
+    display: flex;
+    top: 7rem;
+    justify-content: space-around;
+  
+}
+
+.profile2{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-image: linear-gradient(53deg,var(--bg-color) 0% 50%,var(--white) 50% 100%);
+}
+
+
+
+.profile2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: --balck;
+    object-fit: cover;
+}
+
+.info-profile{
+    width: 50%;
+    padding: 2.4rem 1.6rem;
+}
+
+.title-txt{
+    text-align: center;
+    margin-bottom: 3.6rem;
+}
+
+.header-txt{
+ 
+    font-size: 4.6rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.desc-txt{
+   
+    font-size: 3.6rem;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box-info{
+    width: 100%;
+    display: flex;
+    gap:2.4rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-content{
+    width: 100%;
+    font-size: 2.4rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.txt-content{
+   margin-bottom: 1.6rem;
+}
+
+.phone::before{
+    content: url(./images/ic_baseline-local-phone\ \(1\).png);
+    margin-right: 3.2rem;
+    vertical-align: middle;
+}
+
+.email::before{
+    content: url(./images/ic_round-email.png);
+    margin-right: 3.2rem;
+    vertical-align: middle;
+}
+
+.website::before{
+    content: url(./images/mdi_internet.png);
+    margin-right:3.2rem;
+    vertical-align: middle;
+}
+
+.loc::before{
+    content: url(./images/material-symbols_location-on-rounded.png);
+    margin-right: 3.2rem;
+    vertical-align: middle;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+.btn{
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
+    color: white;
+    background-color: var(--bg-btn);
+    border: none;
+    border-radius: 0.8rem;
+    position: absolute;
+    right: 2.4rem;
+    bottom: 2.4rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 0px 6px 8px var(--box-shdow);
+}
+
+.my-inputs-box{
+    background-color: var(--white);
+    width: 60%;
+    height: fit-content;
+    border-radius: 0.8rem;
+    padding: 1.6rem 3.2rem;
+    display: flex;
+    gap:1.6rem;;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all  0.5s ease;
+}
+
+
+.title-txt-in-inputs{
+font-size: 4.6rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.theme-color{
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user-input{
+    padding: 0.8rem 1.6rem;
+    border: 1px solid var(--bg-btn);
+    width: 100%;
+    height: 4rem;
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+}
+
+.image-in-inputs{
+    height: 18rem;
+    width: 18rem;
+}
+
+.image-in-inputs img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choosing-image{
+    display: flex;
+    gap: 3.6rem;
+    border-radius: 50%;
+}
+
+.my-inputs-box button{
+    height: 4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.8rem;
+    background-color: var(--bg-btn);
+    color: white;
+}
+
+.my-inputs-box button:hover{
+    box-shadow: 0px 6px 8px var(--box-shdow);
+}
+
+.modal{
+    width: 100vw;
+    background-color: var(--bg-modal);
+    height: 100vh;
+    position: fixed;
+    top: -1000%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 0.5s ease;
+}
+
+.close{
+    font-size: 3.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt button{
+    background-color: transparent;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.choosing-image label img{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.choosing-image label input{
+    width: 2rem;
+    height: 2rem;
+   
+}
